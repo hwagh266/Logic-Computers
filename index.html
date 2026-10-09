@@ -3,31 +3,288 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Logic Computer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="Logic Computer - Computer Classes, Digital Skills and Technology Learning.">
+  <title>Logic Computer | Learn. Build. Grow.</title>
+
   <style>
-    body {
-      background: #101827;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px 15px;
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
-    h1 { color: #38bdf8; }
+
+    :root {
+      --bg: #080d18;
+      --panel: #111a2b;
+      --blue: #38bdf8;
+      --purple: #a78bfa;
+      --text: #f8fafc;
+      --muted: #a8b4c8;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 18px 16px;
+      background: #0c1423;
+      border-bottom: 1px solid #26344a;
+      text-align: center;
+    }
+
+    header h1 {
+      color: var(--blue);
+      font-size: 27px;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      color: var(--muted);
+      margin: 3px 0 0;
+      font-size: 13px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding: 13px 8px;
+      background: #0a1020;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .hero {
+      padding: 65px 20px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at top, #17365b 0%, #080d18 70%);
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid #31577d;
+      color: var(--blue);
+      padding: 5px 13px;
+      border-radius: 30px;
+      font-size: 12px;
+    }
+
+    .hero h2 {
+      font-size: clamp(32px, 8vw, 48px);
+      line-height: 1.2;
+      margin: 22px 0 14px;
+    }
+
+    .hero h2 span {
+      color: var(--blue);
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 500px;
+      margin: 0 auto 22px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(100deg, #38bdf8, #818cf8);
+      color: #07111f;
+      padding: 12px 21px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #526782;
+      color: var(--text);
+    }
+
+    section {
+      padding: 42px 16px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 27px;
+      margin: 0 0 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0 auto 25px;
+      max-width: 500px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      max-width: 900px;
+      margin: auto;
+    }
+
     .card {
-      background: #1e293b;
-      padding: 25px;
+      text-align: left;
+      background: linear-gradient(145deg, #141f33, #0e1626);
+      border: 1px solid #263750;
       border-radius: 15px;
+      padding: 22px;
+    }
+
+    .card .emoji {
+      font-size: 30px;
+    }
+
+    .card h3 {
+      margin: 8px 0;
+      color: var(--blue);
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .about-box {
+      max-width: 700px;
+      margin: auto;
+      padding: 24px;
+      border: 1px solid #263750;
+      border-radius: 15px;
+      background: var(--panel);
+    }
+
+    .about-box p {
+      color: var(--muted);
+    }
+
+    .contact {
+      background: #0d1627;
+    }
+
+    footer {
+      text-align: center;
+      padding: 23px 12px;
+      color: var(--muted);
+      border-top: 1px solid #26344a;
+      font-size: 13px;
+    }
+
+    @media (min-width: 600px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="card">
+  <header>
     <h1>LOGIC COMPUTER</h1>
-    <h2>Welcome! | स्वागत आहे!</h2>
-    <p>Computer Classes | कॉम्प्युटर शिक्षण</p>
-    <p>Learn Today, Lead Tomorrow!</p>
-  </div>
+    <p>Technology • Learning • Progress</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <div class="hero" id="home">
+      <span class="tag">YOUR DIGITAL LEARNING JOURNEY</span>
+      <h2>Learn Skills.<br><span>Build Your Future.</span></h2>
+      <p>
+        Welcome to Logic Computer!<br>
+        Logic Computer मध्ये तुमचे स्वागत आहे.
+        चला, कॉम्प्युटर कौशल्ये शिकूया!
+      </p>
+      <a class="btn" href="#courses">Explore Courses ↘</a>
+      <a class="btn btn-outline" href="#about">Know More</a>
+    </div>
+
+    <section id="courses">
+      <h2 class="section-title">Our Courses</h2>
+      <p class="subtitle">आमचे कोर्सेस — Learn at your own pace.</p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="emoji">💻</div>
+          <h3>Basic Computer</h3>
+          <p>Learn computer fundamentals, files, folders and everyday digital skills.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">⌨️</div>
+          <h3>Typing Skills</h3>
+          <p>Improve keyboard familiarity, typing accuracy and practice habits.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">📊</div>
+          <h3>MS Office</h3>
+          <p>Discover Word, Excel and PowerPoint for study and office work.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🌐</div>
+          <h3>Internet Basics</h3>
+          <p>Learn browsers, email, online safety and useful internet skills.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Logic Computer</h2>
+      <p class="subtitle">आमच्याबद्दल</p>
+      <div class="about-box">
+        <h3>Learn Today, Lead Tomorrow!</h3>
+        <p>
+          Our goal is to make computer learning simple
+          and accessible for everyone.
+        </p>
+        <p>
+          कॉम्प्युटर शिकणे सोपे, उपयुक्त आणि
+          सर्वांना समजण्यासारखे बनवणे हे आमचे उद्दिष्ट आहे.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="subtitle">
+        कोर्सविषयी अधिक माहितीसाठी संपर्क करा.
+      </p>
+      <p style="color: #a8b4c8;">
+        Contact details will be added soon.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Logic Computer</p>
+    <p>Learn • Practice • Grow</p>
+  </footer>
 </body>
 </html>
-
